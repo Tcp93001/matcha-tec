@@ -1,30 +1,65 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500;700;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
         <title>Matcha</title>
     </head>
     <body>
-        <h1>Build your blog. Build your business.</h1>
-        <h3>
-            Instantly publish articles, drive more traffic, grow your email list, and see your blog’s impact on sales.
-        </h3>
 
-        <form>
-            <input type="email" />
-            <button type="submit">
-                Try it now &rarr;
-            </button>
-        </form>
+        <!-- Esta es la barra de navegacion -->
+        <section>
+            <header class="header">
+                <a href="/" class="imagen_matcha">
+                    <img class="logo_matcha" src="images/matcha-logo.svg" alt="Logo de Matcha">
+                </a>
 
-        <p>
-            Start publishing today with a <strong>free 7-day trial.</strong>
-        </p>
-        <p>
-            <strong>No credit card</strong> required.
-        </p>
+                <nav class="navbar">
+                    <ul>
+                        <li>Platform</li>
+                        <li>Pricing</li>
+                        <li>Customers</li>
+                        <li>Resources</li>
+                        <li>About</li>
+                    </ul>
+                </nav>
 
-        <img src="images/capterra-inc-vector-logo.png" alt="Capterra">
+                <div class="actions">
+                    <a href="/">Sign In</a>
+                    <button>Start Free Trial</button>
+                </div>
+            </header>
+        </section>
 
+
+        <!-- Esta es la seccion inicial -->
+        <section class="main">
+            <h1>Build your blog. Build your business.</h1>
+            <h3>
+                Instantly publish articles, drive more traffic, grow your email list, and see your blog’s impact on sales.
+            </h3>
+            <form>
+                <input type="email" />
+                <button type="submit">
+                    Try it now &rarr;
+                </button>
+            </form>
+
+            <p>
+                Start publishing today with a <strong>free 7-day trial.</strong>
+            </p>
+            <p>
+                <strong>No credit card</strong> required.
+            </p>
+
+            <figure>
+                <img class="first-image" src="images/capterra-inc-vector-logo.png" alt="Capterra">
+            </figure>
+            <figure>
+                <img class="second-image" src="images/intro_group_image.png" alt="Intro to matcha">
+            </figure>
+        </section>
     </body>
 </html>
