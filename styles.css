@@ -17,6 +17,14 @@ button {
     background-color: #025157;
 }
 
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fffbf7;
+}
+
 .header {
     margin: 40px 20px 0;
     font-size: 0;
@@ -87,6 +95,7 @@ button {
 
 .main {
     text-align: center;
+    margin-top: 260px;
 }
 
 .main h1 {
@@ -139,4 +148,77 @@ button {
 
 .publish .publicidad {
     flex: 1;
+}
+
+.features {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    height: 600px;
+    background-color: #025157;
+    padding: 5% 10%;
+
+    /* se va a borrar al final */
+    margin-bottom: 200px;
+}
+
+.feature-card {
+    margin: 0 15px 20px;
+}
+
+.feature-content {
+    background-color: #fff;
+    border-radius: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.feature-content .feature-text {
+    flex: 2;
+    padding: 15px 20px;
+}
+
+.feature-content .feature-text h3 {
+    font-size: 24px;
+    color: #343434;
+    font-weight: 400;
+}
+.feature-content .feature-text p {
+    font-size: 16px;
+    color: #7e7e7e;
+    font-weight: 400;
+}
+.feature-content .feature-text a {
+    font-size: 16px;
+    color: #67b54b;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.feature-text figure {
+    margin-left: 0;
+}
+
+.feature-text figure img {
+    height: 30px;
+}
+.feature-content .feature-image {
+    flex: 1
+}
+
+.feature-image figure {
+    width: 100%
+}
+
+.feature-image figure img {
+    width: 100%
+}
+
+.movimiento {
+    transition: width 1s;
+}
+
+.movimiento:hover {
+    width: 150%;
 }
