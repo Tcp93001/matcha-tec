@@ -26,6 +26,10 @@ button {
     background-color: #fffbf7;
 }
 
+.main-nav-bg-color {
+    background-color: #fffbf7;
+}
+
 .header {
     margin: 40px 20px 0;
     font-size: 0;
@@ -57,7 +61,7 @@ button {
 }
 
 .navbar {
-    width: 60%;
+    /* width: 60%; esta propiedad se quito para funcionar con Bootstrap */
     text-align: center;
     color: #025157;
     font-weight: 500;
@@ -172,9 +176,6 @@ button {
     height: 600px;
     background-color: #025157;
     padding: 5% 10%;
-
-    /* se va a borrar al final */
-    margin-bottom: 200px;
 }
 
 .feature-card {
@@ -243,10 +244,148 @@ button {
     background-color: #025157;
 }
 
+.card-container {
+    background-color: #a1d683;
+    padding: 10% 0;
+}
+
+
+.comments {
+    padding: 0 15px;
+}
+
+.comments h1 {
+    color: #025157;
+    font-weight: bold;
+    text-align: left;
+    font-family: "Alegreya", serif;
+    font-weight: 900;
+    font-size: 51px;
+    line-height: 61px;
+    letter-spacing: -2px;
+}
+
+.comments p {
+    font-size: 18px;
+    color: #343434;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.comments .btn-beefy {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    padding-top: 12px;
+    text-align: center;
+    color: #fff;
+    background: #025157;
+    border-radius: 8px;
+    height: 45px;
+    width: 166px;
+    transition: all .2s ease-in-out;
+}
+
+.comments .btn-beefy:hover {
+    background-color: #67b54b;
+    color: #fff;
+}
+
+.comments img {
+    margin: 40px 0;
+    padding-right: 10px;
+    width: 50%;
+}
+
+.card-media {
+    height: 300px;
+    position: relative;
+}
+
+.card-media figure {
+    height: 100%;
+}
+
+.card-media figure img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.company {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 210px;
+    right: 15px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.company img {
+    width: 80%;
+    object-fit: cover;
+}
+
+.card-body h4 {
+    color: #025157;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 12px;
+    font-family: "Slabo 27px", serif;
+}
+
+.card-body h3 {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+
+.results {
+    display: flex;
+}
+
+.results img {
+    width: 30px;
+    margin-right: 15px;
+    fill: #025157;
+}
+
+.results p{
+    font-size: 12px;
+    color: #7e7e7e;
+    font-weight: 400;
+}
+
+/* Modficiando los estilos de tarjeta del carrousel de Bootstrap */
+
+.card-footer {
+    border: none;
+    background-color: #fff;
+}
+
+.card-footer button {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.carousel-indicators {
+    bottom: -40px;
+}
+
 
 /* Media queries */
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
     .main form {
         margin-bottom: 25px;
     }
@@ -263,10 +402,10 @@ button {
         width: 100%;
     }
 
-    .navbar,
+    /* .navbar,
     .actions {
         display: none;
-    }
+    } Esto se elimino para usar bo0otstrap*/
 
     .main {
         margin-top: 130px;
