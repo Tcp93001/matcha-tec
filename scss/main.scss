@@ -1,0 +1,112 @@
+@use 'global' as *;
+
+.blog {
+    background-color: $white;
+    max-width: unset;
+    padding: 5% 10%;
+
+    .title {
+        @extend %base-title;
+        font-weight: 800;
+    }
+
+    .process-list {
+        margin: 40px 0 36px;
+
+        .process {
+            margin-bottom: 25px;
+            display: flex;
+
+            & > div {
+                 & > h3 {
+                     color: $dark-green-title;
+                     margin-bottom: 0;
+                     font-size: 30px;
+                     font-weight: 500;
+                 }
+
+                 & > p {
+                     color: $dark-green-text;
+                     margin: 0;
+                 }
+            }
+
+            .process-icon {
+                width: 60px;
+                height: 60px;
+                margin-right: 10px;
+                text-align: center;
+
+                img {
+                    height: 100%;
+                }
+            }
+
+        }
+    }
+
+    button {
+        height: auto;
+        border-radius: 8px;
+        border: none;
+        padding: 12px;
+        width: 180px;
+        margin-bottom: 15px;
+    }
+}
+
+
+// Moificamos estilos de bootstrap
+
+.card {
+    height: 100%;
+
+    .card-body {
+    
+        .card-title {
+            font-size: 24px;
+            color: $gray;
+        }
+    
+        .metadata {
+            .category {
+                color: $light-green;
+            }
+    
+            .read-time {
+                color: $light-gray;
+            }
+        }
+    
+        .card-text {
+            color: $gray;
+            font-size: 18px;
+            line-height: 1.5em;
+            min-height: 6em;
+    
+            .read-more > a {
+                text-decoration: underline;
+                background-color: unset;
+            }
+        }
+    
+        .author {
+            display: flex;
+            align-items: center;
+    
+            img {
+                border-radius: 50%;
+                width: 35px;
+                height: 35px;
+                margin-right: 10px;
+            }
+    
+            p {
+                color: $gray;
+                font-size: 14px;
+                margin: 0;
+                font-weight: 600;
+            }
+        }
+    }
+}
